@@ -5,3 +5,8 @@ data_ingestion:
   source_URL: https://github.com/entbappy/Branching-tutorial/raw/master/samsumdata.zip
   local_data_files: artefacts/data_ingestion/samsumdata.zip
   unzip_dir: artefacts/data_ingestion
+
+data_validation:
+  root_dir: artefacts/data_validation
+  STATUS_FILE: artefacts/data_validation/status.txt
+  ALL_REQUIRED_FILES: ["train", "test", "validation"]
