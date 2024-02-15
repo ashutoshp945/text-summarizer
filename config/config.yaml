@@ -20,3 +20,10 @@ model_trainer:
   root_dir: artefacts/model_trainer
   data_path: artefacts/data_transformation/samsum_dataset
   model_ckpt: google/pegasus-cnn_dailymail
+
+model_evaluation:
+  root_dir: artefacts/model_evaluation
+  data_path: artefacts/data_transformation/samsum_dataset
+  model_path: artefacts/model_trainer/pegasus-samsum-model
+  tokenizer_path: artefacts/model_trainer/tokenizer
+  metric_file_name: artefacts/model_evaluation/metrics.csv
